@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biblioteca</title>
+
+    <style>
+        /* Estilos do formulário */
+        body {
+            background: linear-gradient(180deg, #000000 0%, #000615 100%);
+            font-family: "Arimo", sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #ffffff;
+        }
+
+        .screen {
+            background-color: #e8e5e5;
+            width: 450px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            padding: 60px;
+            border-radius: 20px;
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+        }
+
+        .forms label {
+            font-weight: 500;
+            color: #010201;
+        }
+
+        .forms input {
+            padding: 10px;
+            border: none;
+            font-family: "Arimo", sans-serif;
+            width: 100%;
+            border-radius: 10px;
+            font-size: 16px;
+            margin-bottom: 10px;
+        }
+
+        .forms h1 {
+            padding-bottom: 20px;
+            color: #010201;
+            font-size: 26px;
+        }
+
+        .forms input[type=submit] {
+            margin-top: 20px;
+            border: none;
+            padding: 10px;
+            width: 100px;
+            border-radius: 20px;
+            background-color: #060404;
+            color: #0056b3;
+            font-weight: 600;
+            font-size: 14px;
+            cursor: pointer;
+        }
+
+        .forms input[type=submit]:hover {
+            background-color: #0056b3;
+            color: #060404;
+        }
+
+        .error {
+            text-align: center;
+            color: #8c243b;  /* Cor vermelha para erro */
+            padding-top: 10px;
+            font-size: 18px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="screen">
+        <div class="forms">
+            <h1>Bem-vindo a Biblioteca do Pedro !</h1>
+
+            <!-- Exibindo mensagem de erro, se a URL contiver a query string 'error=invalid' -->
+            <div id="error-message" class="error" style="display:none;">
+                Usuário ou senha incorretos!
+            </div>
+
+            <form id="login-form">
+                <label for="username">Login</label>
+                <input type="text" id="username" name="username" placeholder="Insira seu login corporativo" required>
+                
+                <label for="password">Senha</label>
+                <input type="password" id="password" name="password" placeholder="Insira sua senha" required>
+
+                <input type="submit" value="Login">
+            </form>
+        </div>
+    </div>
+
+    <script>
+        // Verificar se a URL contém o parâmetro 'error=invalid'
+        const urlParams = new URLSearchParams(window.location.search);
+        if (urlParams.has('error') && urlParams.get('error') === 'invalid') {
+            // Mostrar a mensagem de erro
+            document.getElementById('error-message').style.display = 'block';
+        }
+    
+        // Manipulação do formulário
+        document.getElementById('login-form').addEventListener('submit', function(event) {
+            event.preventDefault(); // Impede o envio do formulário para fins de demonstração
+    
+            const username = document.getElementById('username').value;
+            const password = document.getElementById('password').value;
+    
+            // Condições para validação do login (usuários e senhas válidas)
+            const validCredentials = [
+                { username: 'admin', password: 'admin' },
+                { username: 'Pedro', password: '123456' },
+                { username: 'Usuario', password: '123' }
+            ];
+    
+            // Verificar se as credenciais inseridas correspondem a alguma das válidas
+            const isValidLogin = validCredentials.some(
+                cred => cred.username === username && cred.password === password
+            );
+    
+            // Se as credenciais forem válidas
+            if (isValidLogin) {
+                // Redireciona para a página principal (ou outra página de sua escolha)
+                window.location.href = 'index1.html';
+            } else {
+                // Se as credenciais estiverem incorretas, redireciona com a mensagem de erro
+                window.location.href = 'index.html?error=invalid';
+            }
+        });
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1, maximum-scale=1, user-scalable=no" />
+    <title>Biblioteca</title>
+    
+    <!-- CSS Embutido -->
+    <style>
+        /* Adicionando uma fonte bonita e estilizando o texto */
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #0056b3; /* Cor de fundo do header */
+            color: white;
+            padding: 15px;
+            text-align: center;
+        }
+
+        .menu nav ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .menu nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+
+        .menu nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 18px;
+        }
+
+        .boas-vindas {
+            margin-top: 50px;
+            text-align: center;
+            font-size: 28px;
+            font-weight: 700;
+            color: #0056b3;
+        }
+
+        .boas-vindas p {
+            font-size: 18px;
+            font-weight: 400;
+            color: #555;
+            max-width: 600px;
+            margin: 20px auto;
+            line-height: 1.6;
+        }
+
+        .menupag ul {
+            list-style: none;
+            padding: 0;
+            margin-top: 30px;
+            max-width: 600px; /* Tamanho máximo para centralizar melhor */
+            margin: 0 auto;
+        }
+
+        .menupag ul li {
+            margin-bottom: 15px;
+            background-color: #e7f1ff; /* Fundo claro */
+            border-radius: 10px; /* Bordas arredondadas */
+            padding: 20px;
+            text-align: center;
+            font-size: 22px;
+            font-weight: bold;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombras suaves */
+            transition: background-color 0.3s ease, transform 0.3s ease;
+        }
+
+        .menupag ul li:hover {
+            background-color: #cce0ff; /* Alteração de cor ao passar o mouse */
+            transform: scale(1.05); /* Efeito de zoom ao passar o mouse */
+        }
+
+        .menupag ul li a {
+            text-decoration: none;
+            color: #0056b3;
+            font-size: 24px;
+            font-weight: 600;
+            transition: color 0.3s ease;
+        }
+
+        .menupag ul li a:hover {
+            color: #003c8f;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="menu">
+            <nav>
+                <ul>
+                    <!-- Menu de Consulta -->
+                    <li class="nivel1"><a href="index1.html">Consulta</a></li>
+                    <!-- Menu de Cadastro -->
+                    <li class="nivel1"><a href="cadastro.html">Cadastro</a></li>
+                    <li class="nivel1"><a href="tabela.php">Tabela</a></li>
+                    <li class="nivel1"><a href="grafico.php">Gráfico</a></li>
+                    <li class="nivel1"><a href="logout.php">Sair</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    
+    <main>
+        <center>
+            <!-- Mensagem de boas-vindas -->
+            <div class="boas-vindas">
+                <h1>Bem-vindo à Biblioteca do Pedro!</h1>
+                <p>Aqui temos todo o controle sobre os nossos livros. Vem ler e escolher a melhor opção para você.</p>
+            </div>
+            
+            <div class="centro" align="center">
+                <!-- Seção Consultar com fundo, bordas arredondadas e centralização -->
+                <div class="menupag">
+                    <ul>
+                        <li><a href="cadlivro.php">Cadastrar Livros</a></li>
+                        <li><a href="cadsocio.php">Cadastrar Socios</a></li>
+                        <li><a href="cadretirada.php">Cadastrar Retiradas</a></li>
+                    </ul>
+                </div>
+            </div>
+        </center>
+    </main>
+</body>
+</html>
