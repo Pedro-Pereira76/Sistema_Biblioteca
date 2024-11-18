@@ -134,7 +134,7 @@ Certifique-se de ter as tabelas `socios`, `livros` ,`retiradas` e `superior` dev
 
 1. Clone o repositório para o seu ambiente local:
    ```bash
-   git clone <URL_DO_REPOSITORIO>
+   git clone <https://github.com/Pedro-Pereira76/Sistema_Biblioteca.git>
    cd Biblioteca-Pedro
    ```
 
@@ -162,12 +162,15 @@ Se você quiser contribuir com este projeto, siga os seguintes passos:
 
 ## Imagens 
 
-!(<Captura de tela 2024-11-16 143123.png>) 
-!(<Captura de tela 2024-11-16 143136.png>) 
-!(<Captura de tela 2024-11-16 143208.png>) 
-!(<Captura de tela 2024-11-16 143219.png>) 
-!(<Captura de tela 2024-11-16 143237.png>) 
-!(<Captura de tela 2024-11-16 143247.png>) 
-!(<Captura de tela 2024-11-16 143302.png>) 
-!(<Captura de tela 2024-11-16 143312.png>) 
-!(<Captura de tela 2024-11-16 143321.png>)
+![Captura de tela 2024-11-16 143123](https://github.com/user-attachments/assets/182e075e-d56e-4034-9d11-96e9a151582f)
+![Captura de tela 2024-11-16 143136](https://github.com/user-attachments/assets/ecfd745e-51f6-4464-a512-4ecbd15e09ff)
+![Captura de tela 2024-11-16 143208](https://github.com/user-attachments/assets/b5f42973-c79f-4d3b-a199-13efc08057d9)
+![Captura de tela 2024-11-16 143219](https://github.com/user-attachments/assets/8ee0d190-4dbb-4277-a10c-5b4600fda8fc)
+![Captura de tela 2024-11-16 143237](https://github.com/user-attachments/assets/f91974d6-fd00-4c87-8b2a-b7ba2ef653a1)
+![Captura de tela 2024-11-16 143247](https://github.com/user-attachments/assets/569d433b-aeb0-40c7-ae93-46761ec3c407)
+![Captura de tela 2024-11-16 143302](https://github.com/user-attachments/assets/73cde4f7-5d1a-4bd8-be50-bd06bcc41351)
+![Captura de tela 2024-11-16 143312](https://github.com/user-attachments/assets/c52f6bb1-73a7-44f2-9375-a83a4b01b82c)
+![Captura de tela 2024-11-16 143321](https://github.com/user-attachments/assets/6e013da1-f8fb-4d91-a416-ff1c028740a9)
+
+
+
