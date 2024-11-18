@@ -1,4 +1,4 @@
-# Projeto de Gráficos de Biblioteca
+# Biblioteca Do Pedro
 
 Este é um projeto de visualização de dados de uma biblioteca, que utiliza gráficos para mostrar informações sobre o total de sócios, retiradas de livros por ano e o livro mais retirado. O projeto utiliza **PHP** para a manipulação do banco de dados, **Chart.js** para a renderização dos gráficos e **PDO** para a conexão com o banco de dados.
 
